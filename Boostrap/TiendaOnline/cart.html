@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sitio de Tienda</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="./index.html">Inicio</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="./productos.html">Productos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Carrito</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Administrar
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="admin_usuarios.html">Usuarios</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="admin_productos.html">Productos</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" aria-disabled="true">Otro</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+    <div class="container">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Imagen</th>
+                    <th>Producto</th>
+                    <th>Descripcion</th>
+                    <th>Precio</th>
+                    <th>Cantidad</th>
+                    <th>Categoria</th>
+                    <th>Cupones</th>
+                    <th>Total</th>
+                    <th>Accion</th>
+                </tr>
+            </thead>
+            <tbody>
+                <td><img src="https://th.bing.com/th?id=OIF.6SENKwoUmBDXymhHrGGB%2bg&rs=1&pid=ImgDetMain" width="150px"></td>
+                <td>Robot asistente</td>
+                <td>Asistente virtual en forma humanoide</td>
+                <td>$400</td>
+                <td>2</td>
+                <td>Limpieza</td>
+                <td>$20</td>
+                <td>$380</td>
+                <td><a href="#"><i class="bi bi-trash"></i></a></td>
+            </tbody>
+            <tbody>
+              <td><img src="https://th.bing.com/th/id/OIF.EU8Zojp9ZV8gCE4DnIug9g?rs=1&pid=ImgDetMain" width="150px"></td>
+              <td>Robot de seguridad</td>
+              <td>Tu hogar seguro con la mejor tecnologia</td>
+              <td>$530</td>
+              <td>1</td>
+              <td>Seguridad</td>
+              <td>$50</td>
+              <td>$480</td>
+              <td><a href="#"><i class="bi bi-trash"></i></a></td>
+          </tbody>
+        </table>
+        <section class="d-flex justify-content-end">
+            <button class="btn btn-primary">Comprar</button>
+        </section>
+    </div>
+    <footer class="bg-dark text-center mt-4">
+        <div class="container">
+          <div class="row">
+            <section>
+              <ul>
+
+              </ul>
+            </section>
+            <section class="col-lg-4 col-md-12">
+              <h5 class="text-light mt-2">Síguenos</h5>
+              <ul class="list-unstyled text-white">
+                <li><a href="#"><i class="bi bi-facebook"></i></a>@Tiendita</li>
+                <li><a href="#"><i class="bi bi-instagram"></i></a>@Tiendita</li>
+                <li><a href="#"><i class="bi bi-twitter-x"></i></a>@Tiendita</li>
+              </ul>
+            </section>
+          </div>
+          <section class="text-center p-2 text-light">
+            ⓒ 2024 Tiendita Ecomerce - Todos los derechos reservados.
+          </section>
+        </div>
+      </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

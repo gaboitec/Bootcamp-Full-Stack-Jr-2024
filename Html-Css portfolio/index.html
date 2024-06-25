@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF=8">
+        <meta name="viewport" content="width=device-wid, inicial-scale=1.0">
+        <title>Practica Portfolio</title>
+        <link rel="stylesheet" href="./estilos.css">
+    </head>
+    <body>
+        <div class="container">
+            <header class="header">
+                <nav class="navbar">
+                    <section class="logo">
+                        <h2>Y<span>GG</span>C</h2>
+                    </section>
+                    <ul class="menu">
+                        <li><a href="#">Inicio</a></li>
+                        <li><a href="#">Quien Soy?</a></li>
+                        <li><a href="#">Proyectos</a></li>
+                        <li><a href="#">Contacto</a></li>
+                    </ul>
+                </nav>
+            </header>
+
+            <main class="main-content">
+                <section class="info-content">
+                    <h1>Soy Yefry Garcia</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem nihil tempore fugiat deleniti est veniam voluptates dolorum error iste.</p>
+                    <button class="btn-download-cv">Descargar CV</button>
+                </section>
+                <img src="./images/Perfil.jpg" alt="imagen-Perfil">
+            </main>
+            <section class="portfolio-container">
+                <article class="card">
+                    <div class="card-img">
+                        <img src="./images/DragonUI.jpg" alt="Programa #1">
+                    </div>
+                    <div class="card-title">
+                        <h4>Rocket Designer</h4>
+                    </div>
+                    <div class="card-links">
+                        <button><a href="#">Github</a></button>
+                        <button><a href="#">Demo</a></button>
+                    </div>
+                </article>
+                <article class="card">
+                    <div class="card-img">
+                        <img src="./images/controlRover.jpg" alt="Programa #2">
+                    </div>
+                    <div class="card-title">
+                        <h4>Rover Curiosity Controller</h4>
+                    </div>
+                    <div class="card-links">
+                        <button><a href="#">Github</a></button>
+                        <button><a href="#">Demo</a></button>
+                    </div>
+                </article>
+                <article class="card">
+                    <div class="card-img">
+                        <img src="./images/satelitesoftware.jpg" alt="Programa #3">
+                    </div>
+                    <div class="card-title">
+                        <h4>Satelital Communicator</h4>
+                    </div>
+                    <div class="card-links">
+                        <button><a href="#">Github</a></button>
+                        <button><a href="#">Demo</a></button>
+                    </div>
+                </article>
+            </section>
+            <section class="contact-form">
+                <h2>Contáctame</h2>
+                <form action="tu_procesador_de_formulario.php" method="post">
+                    <div class="form-group">
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" id="nombre" name="nombre" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Correo Electrónico:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="mensaje">Mensaje:</label>
+                        <textarea id="mensaje" name="mensaje" rows="6" required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit">Enviar</button>
+                    </div>
+                </form>
+            </section>
+        </div>
+    </body>
+</html>
