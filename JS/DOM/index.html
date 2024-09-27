@@ -6,10 +6,49 @@
     <title>Primera practica seria DOM</title>
 </head>
 <body>
-    <div>
+    <!--<div id="container">
         <h1>Chee, quedate tranquilo que si anda :)</h1>
-        <button onclick="meApretaste()">Click</button>
+        <button id="btnApretame">Click</button>
     </div>
     <script src="./main.js"></script>
+    
+    ///////////////////////////
+
+    
+
+    <input type="radio" id="radio" name="radioGroup" value="option 1" placeholder="opcion"> 
+    <label for="radio1">Honduras</label> 
+
+    <input type="radio" id="radio2"name="radioGroup" value="opcion 2" placeholder="op 3"> 
+    <label for="radio2">El Salvador</label> 
+
+    <input type="radio" id="radio3" name="radioGroup" value="opcion 3" placeholder="opcion3"> 
+    <label for="radio2">Guatemala</label> 
+
+    <button type="button">Obtener valor</button>
+
+    -->
+
+    <p>che, de donde sos vos?</p>
+
+    <form onsubmit="validarForm(event)">
+
+        <input type="text" id="fullname" name="fullname" placeholder="Nombre completo">
+        
+        <select name="gender" id="gender" title="Genero">
+           
+            <option value="Masculino">Masculino</option>
+            <option value="Femenino">Femenino</option>
+            <option value="default" selected>Elija</option>
+        
+        </select>
+
+        <input type="text" name="email" id="email" placeholder="correo"/>
+
+        <button type="submit">Enviar</button>
+    </form>
+
+    
 </body>
+<script src="main.js"></script>
 </html>
