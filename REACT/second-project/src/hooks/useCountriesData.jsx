@@ -22,7 +22,6 @@ export const useCountriesData = (region,name) => {
             filteredCountries = filteredCountries.filter((country) => country.region === region )
         }
 
-
         if(name){
             filteredCountries = filteredCountries.filter((country) => country.name.common  === name )
         }        
@@ -36,7 +35,6 @@ export const useCountriesData = (region,name) => {
         setCountries(filteredCountries);
     }   
     
-
     useEffect( () => { 
         //console.log("Holis");
         getCountries();
