@@ -9,7 +9,7 @@ function generar_Fibonacci($numero)
     if ($numero < 2) {
         return $numero; //retorna el numero
     } else { //si es => 2
-        //variablet temporal para fibonacci anterior 1 y 2
+        //variables temporales de fibonacci anterior 1 y 2
         $fibo1 = 0;
         $fibo2 = 1;
         //ciclo for para sumar de forma secuencial
