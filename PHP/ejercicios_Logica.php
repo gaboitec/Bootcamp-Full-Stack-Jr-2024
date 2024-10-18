@@ -25,14 +25,19 @@ function generar_Fibonacci($numero)
 
 echo generar_Fibonacci(6);
 
-// #2 => Números primos:
+// #2 => Número primo:
+//creacion de la funcio
 function esPrimo($numero)
 {
+    //recorrer el numero con ciclo for
     for ($i = 2; $i < $numero; $i++) {
+        //si $numero se divide entre 2 hasta $número -1, no es primo
         if ($numero % $i == 0) {
             echo $numero . " No es primo";
             break;
-        } else {
+        }
+        //si no, es primo
+        else {
             echo $numero . " Si es primo";
             break;
         }
@@ -40,3 +45,28 @@ function esPrimo($numero)
 }
 
 esPrimo(10);
+
+// #3 => Palindromo
+//crear funcion
+function esPalindromo($palabra)
+{
+    //convertir la palabra en un array
+    $array = str_split($palabra);
+    print_r($array);
+    //variable contador que va a ir de reversa
+    $reversa = count($array) - 1;
+    //recorrer el array con for
+    for ($i = 0; $i < count($array) / 2; $i++) {
+        //si la primera letra y la ultima mp son iguales
+        if ($array[$i] != $array[$reversa]) {
+            echo "No es palíndromo";
+            return;
+        }
+        //restar a la variable reversa;
+        $reversa = $reversa - 1;
+    }
+    //si todos los extremos son iguales
+    echo "Sí es palíndromo";
+}
+
+esPalindromo("reconocer");
