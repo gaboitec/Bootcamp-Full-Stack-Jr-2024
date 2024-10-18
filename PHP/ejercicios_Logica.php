@@ -25,5 +25,18 @@ function generar_Fibonacci($numero)
 
 echo generar_Fibonacci(6);
 
+// #2 => Números primos:
+function esPrimo($numero)
+{
+    for ($i = 2; $i < $numero; $i++) {
+        if ($numero % $i == 0) {
+            echo $numero . " No es primo";
+            break;
+        } else {
+            echo $numero . " Si es primo";
+            break;
+        }
+    }
+}
 
-// #2 => Serie de Fibonacci:
+esPrimo(10);
